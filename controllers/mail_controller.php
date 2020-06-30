@@ -5,8 +5,8 @@ use PHPMailer\PHPMailer\PHPMailer;
 require 'vendor/autoload.php';
 global $server_mail;
 global $server_pass;
-$server_mail = "tanmaymohapatra17@gmail.com";
-$server_pass = "Mer@N@@mGoldy1727";
+$server_mail = "";
+$server_pass = "";
 
 ?>
 
