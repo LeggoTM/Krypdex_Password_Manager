@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
--- http://www.phpmyadmin.net
+-- version 4.9.1
+-- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 21, 2018 at 09:36 PM
--- Server version: 5.7.22-0ubuntu0.16.04.1
--- PHP Version: 7.0.30-0ubuntu0.16.04.1
+-- Generation Time: Jun 30, 2020 at 11:43 AM
+-- Server version: 8.0.18
+-- PHP Version: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -38,9 +40,6 @@ CREATE TABLE `passwords` (
 -- Dumping data for table `passwords`
 --
 
-INSERT INTO `passwords` (`ID`, `user`, `name`, `loginid`, `password`) VALUES
-(1, 'iit2016107@iiita.ac.in', 'fgregerg', 'fgjnyjkyuklythrtjutjyh', 'ghthytj'),
-(3, 'iit2016107@iiita.ac.in', 'rdgrtdh', 'hrthrj', 'tyhrtjhryj');
 
 -- --------------------------------------------------------
 
@@ -58,8 +57,6 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`email`, `pass`, `token`) VALUES
-('iit2016107@iiita.ac.in', '$2y$10$n7u9BeMoDWSUGAYyO.GEdep9iF5OjI4mq4fr.VJrXH6xG.5.XH6Va', '0');
 
 --
 -- Indexes for dumped tables
@@ -85,7 +82,9 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `passwords`
 --
 ALTER TABLE `passwords`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
